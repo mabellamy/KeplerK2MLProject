@@ -1,0 +1,53 @@
+{% extends "base.html" %} {% block title %}Models{% endblock %} 
+{% block content %}
+<body>
+    <hr>
+    <h1>Machine Learning Models</h1>
+    <hr>
+    <h2>Neural Network</h2>
+    <hr>
+    <h3>Model 1</h3>
+    keras.models.Sequential<br>
+    ([keras.layers.Dense(4500, activation = 'sigmoid', input_shape = X_train.shape[1:]),<br>
+    keras.layers.Dense(2250, activation = 'sigmoid'),<br>
+    keras.layers.Dense(1125, activation = 'relu'),<br>
+    keras.layers.Dense(665, activation = 'relu'),<br>
+    keras.layers.Dense(2, activation = 'softmax')])<br>
+    <br>
+    model.compile(loss = "mean_squared_error", optimizer=keras.optimizers.SGD(learning_rate=0.01), metrics = ['accuracy'])<br>
+    <br>
+    model.fit(X_train, y_train, epochs = 50, validation_data = (X_valid, y_valid), callbacks = [keras.callbacks.EarlyStopping(patience = 15)])</p>
+    <hr>
+    <h3>Model 2</h3>
+    keras.models.Sequential<br>
+    ([keras.layers.Dense(4500, activation = 'relu', input_shape = X_train.shape[1:]),<br>
+    keras.layers.Dense(2250, activation = 'relu'),<br>
+    keras.layers.Dense(1125, activation = 'relu'),<br>
+    keras.layers.Dense(665, activation = 'relu'),<br>
+    keras.layers.Dense(2, activation = 'softmax')])<br>
+    <br>
+    model2.compile(loss = "mean_squared_error", optimizer=keras.optimizers.SGD(learning_rate=0.01), metrics = ['accuracy'])<br>
+    <br>
+    model2.fit(X_train, y_train, epochs = 50, validation_data = (X_valid, y_valid), callbacks = [keras.callbacks.EarlyStopping(patience = 15)])</p>
+    <hr>
+    <h3>Model 3</h3>
+    keras.models.Sequential<br>
+    ([keras.layers.Dense(4500, activation = 'sigmoid', input_shape = X_train.shape[1:]),<br>
+    keras.layers.Dense(2250, activation = 'sigmoid'),<br>
+    keras.layers.Dense(1125, activation = 'sigmoid'),<br>
+    keras.layers.Dense(665, activation = 'sigmoid'),<br>
+    keras.layers.Dense(2, activation = 'softmax')])<br>
+    <br>
+    model.compile(loss = "mean_squared_error", optimizer=keras.optimizers.SGD(learning_rate=0.01), metrics = ['accuracy'])<br>
+    <br>
+    model.fit(X_train, y_train, epochs = 50, validation_data = (X_valid, y_valid), callbacks = [keras.callbacks.EarlyStopping(patience = 15)])</p>
+    <hr>
+    <hr>
+    <h2>K-Nearest Neighbor</h2>
+    <hr>
+    <h3>KNN Inputer</h3>
+    <hr>
+    <p>knn_inputer = KNNImputer(n_neighbors=neighborNumber)<br>
+    kepler_knn_inputer = knn_inputer.fit_transform(kepler_koi_data_no_labels)</p>
+</body>
+{% endblock %}

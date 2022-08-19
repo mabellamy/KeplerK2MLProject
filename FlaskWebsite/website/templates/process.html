@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}Process{% endblock %} 
+{% block content %}
+<body>
+    <hr>
+    <hr>
+    <h1>Process</h1>
+    <hr>
+    <p>The process toward acquiring the results was somewhat involved. Let me break this down.</p>
+    <hr>
+    <h2>Starting With Importing and Cleaning</h2>
+    <hr>
+    <p>From the top. After looking over the Kepler Objects of Interest data in Excel, I noted the non-essential columns to be removed for preparation of model training and testing.
+    From there, the Kepler and K2 Objects of Interest data were read into a Jupyter Notebook and then the noted columns were removed from the Kepler Data.
+    The Candidate Objects of Interest label data was separated from the calculating data and One-Hot Encoded for model preparation. 
+    Following the removal of non-essential columns, NA values were noted and counted. This lead to the first machine learning algorithm needed.</p>
+    <hr>
+    <p>With certain columns having up to 15% of missing data, this required the use of the K-Nearest Neighbor Inputer algorithm to alleviate.
+    Do note, this process is repeated with the K2 Objects of Interest Data after model training and testing. 
+    To find the number of neighbors needed for the algorithm, the square root of the number of rows, rounded up, was used.
+    Once the number of neighbors was calculated, the KNNInputer algorithm was used. This step was important in preparing data for training and testing.</p>
+    <hr>
+    <p>Also, in Excel, I compared the Kepler Objects of Interest Data Columns with the K2 Objects of Interest Data Columns for Finding appropriate data reduction columns for modeling.</p>
+    <hr>
+    <hr>
+    <h2>Moving Onto Modeling</h2>
+    <hr>
+    <p>The general layout of the Neural Network was a 5 layer setup. The first four hidden layers started were ran in differing setups. 
+    The neurons per layer started at 4500 and were reduced by a factor of 2 for each layer up through the 4th layer. 
+    The activation function was either rectified linear or sigmoid, though the two best models were full sigmoid activations functions or a combination of the two.
+    The final layer was a 2 neuron dense layer with a softmax activation function. Each model had an epoch of 50 to 100, but with a early stop callback of 15 epochs.</p>
+    <hr>
+    <p>After running 3 separate models, over the larger Kepler dataset, the overall accuracy was approximately 50%, with a 25% loss, through testing.</p>
+    <hr>
+    <p>When the data was reduced, Model 1 had the highest accuracy at approximately 63% with just over 22% loss.</p>
+    <hr>
+    <hr>
+    <h2>After the Models</h2>
+    <hr>
+    <p>After training and testing the models on the Kepler Data, model 1 was used on the reduced K2 Objects of Interest Data.
+    The prediction was first compared against the K2 data. After the initial comparison, the two sets of data were merged, with the K2 Confirmed and False Positive labels superseding the model data.
+    Once merged, the new dataset was compared against the original K2 data.</p>
+</body>
+{% endblock %}

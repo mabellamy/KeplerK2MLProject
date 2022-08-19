@@ -1,0 +1,12 @@
+{% from 'macros.html' import data_table %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/styles.css" />
+    </head>
+
+    <body>
+        {{ data_table(headings, data) }}
+    </body>
+</html>

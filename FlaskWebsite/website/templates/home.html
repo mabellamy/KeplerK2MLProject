@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} 
+{% block content %}
+<body>
+    <title>K2 Classification Derived from Kepler Classification Through Machine Learning</title>
+    <hr>
+    <hr>
+    <h2>The Kepler and K2 Space Missions</h2>
+    <hr>
+    <p>Have you ever wondered, how many possible planets are out there? Are there any other planets in out galactic backyard? Is our galaxy an anomaly? 
+    This is where the Kepler mission came into play.
+    </p>
+    <hr>
+    <p>The Kepler missions scientific objective was "to explore the structure and diversity of planetary systems"<sup>1</sup>.
+    The mission was to use a satellite telescope to observe stars and log "transits" of objects that would obstruct light emissions from those stars.
+    This would require constant observation of objects within the field of view of the telescope. This also required the telescope to not be obstructed by the sun, thusly having to position the satellite outside of the ecliptic plane of our system.
+    </p>
+    <hr>
+    <p>The Kepler mission was supposed to last for 4 years. The first setback occured when the satellite lost functionality of one of the reaction wheels within the telescope.
+    This created telescope transitioning issues that limited the Field of View for the mission's goal of monitoring 150,000 stars<sup>1</sup>. In May of 2013, the Kepler satellite lost the second of four reaction wheels.
+    With two wheels nonresponsive, the original Kepler mission was brought to an end. But, the mechanical issues did not stop the mission entirely.
+    </p>
+    <hr>
+    <p>The K2 mission was developed months after the end of the original Kepler mission. The K2 mission was created to be community-driven.
+    From community proposed targets, the Kepler satellite was tasking into sequential observing campaigns, bringing purpose to an almost defunct piece of space machinery<sup>1</sup>.
+    The K2 program lasted until 2018. That is where we start.
+    </p>
+    <hr>
+    <hr>
+    <h2> Goal and the Limitations </h2>
+    <hr>
+    <p>The purpose, or goal of this project, was to create an artificial neural network to classify the K2 Exoplanet Ojects of Interest.
+    Using the Kepler Objects of Interest Exoplanet Classification data, which has already been labeled, the K2 candidates should be able to be classified into "Confirmed", "False Positive", and "Candidate" qualification.
+    The reason for only evaluating the Objects of Interest data came down to THREE factors, Manpower (the Kepler mission had a team of scientists and programmers), Time (only 7 weeks), and Expertise (as I do not have a degree in Astrophysics, or access to someone who does, I did not want or have the time to misuse physics formulas).
+    But, the amount of data available should be reasonable to assist in the classification of the unknown K2 Objects of Interest.</p>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Sources for Reference</h1>
+    <hr>
+    <p><sup>1</sup>NASA Kepler and K2 Missions Overview: https://www.nasa.gov/mission_pages/kepler/overview/index.html
+    <br>
+    <sup>2</sup>Kepler Objects of Interest Data: https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=cumulative
+    <br>
+    <sup>3</sup>K2 Planets and Candidates Data: https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=k2pandc</p>
+</body>
+{% endblock %}

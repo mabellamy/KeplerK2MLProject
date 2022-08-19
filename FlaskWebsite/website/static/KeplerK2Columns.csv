@@ -1,0 +1,128 @@
+Column Lables,Column Names,In K2 Data
+pl_name,Planet Name,#N/A
+hostname,Host Name,#N/A
+pl_letter,Planet Letter,#N/A
+k2_name,K2 ID,#N/A
+epic_hostname,EPIC HOST ID,#N/A
+epic_candname,EPIC CANDIDATE ID,#N/A
+hd_name,HD ID,#N/A
+hip_name,HIP ID,#N/A
+tic_id,TIC ID,#N/A
+gaia_id,GAIA ID,#N/A
+default_flag,Default Parameter Set,#N/A
+disposition,Archive Disposition,#N/A
+disp_refname,Archive Disposition Reference,#N/A
+sy_snum,Number of Stars,#N/A
+sy_pnum,Number of Planets,TRUE
+sy_mnum,Number of Moons,#N/A
+cb_flag,Circumbinary Flag,#N/A
+discoverymethod,Discovery Method,#N/A
+disc_year,Discovery Year,#N/A
+disc_refname,Discovery Reference,#N/A
+disc_pubdate,Discovery Publication Date,#N/A
+disc_locale,Discovery Locale,#N/A
+disc_facility,Discovery Facility,#N/A
+disc_telescope,Discovery Telescope,#N/A
+disc_instrument,Discovery Instrument,#N/A
+rv_flag,Detected by Radial Velocity Variations,#N/A
+pul_flag,Detected by Pulsar Timing Variations,#N/A
+ptv_flag,Detected by Pulsation Timing Variations,#N/A
+tran_flag,Detected by Transits,#N/A
+ast_flag,Detected by Astrometric Variations,#N/A
+obm_flag,Detected by Orbital Brightness Modulations,#N/A
+micro_flag,Detected by Microlensing,#N/A
+etv_flag,Detected by Eclipse Timing Variations,#N/A
+ima_flag,Detected by Imaging,#N/A
+dkin_flag,Detected by Disk Kinematics,#N/A
+soltype,Solution Type,#N/A
+pl_controv_flag,Controversial Flag,#N/A
+pl_refname,Planetary Parameter Reference,#N/A
+pl_orbper,Orbital Period [days],TRUE
+pl_orbsmax,Orbit Semi-Major Axis [au]),#N/A
+pl_rade,Planet Radius [Earth Radius],#N/A
+pl_radj,Planet Radius [Jupiter Radius],#N/A
+pl_masse,Planet Mass [Earth Mass],#N/A
+pl_massj,Planet Mass [Jupiter Mass],#N/A
+pl_msinie,Planet Mass*sin(i) [Earth Mass],#N/A
+pl_msinij,Planet Mass*sin(i) [Jupiter Mass],#N/A
+pl_cmasse,Planet Mass*sin(i)/sin(i) [Earth Mass],#N/A
+pl_cmassj,Planet Mass*sin(i)/sin(i) [Jupiter Mass],#N/A
+pl_bmasse,Planet Mass or Mass*sin(i) [Earth Mass],#N/A
+pl_bmassj,Planet Mass or Mass*sin(i) [Jupiter Mass],#N/A
+pl_bmassprov,Planet Mass or Mass*sin(i) Provenance,#N/A
+pl_dens,Planet Density [g/cm**3],#N/A
+pl_orbeccen,Eccentricity,TRUE
+pl_insol,Insolation Flux [Earth Flux],TRUE
+pl_eqt,Equilibrium Temperature [K],TRUE
+pl_orbincl,Inclination [deg],TRUE
+pl_tranmid,Transit Midpoint [days],#N/A
+pl_tsystemref,Time Reference Frame and Standard,#N/A
+ttv_flag,Data show Transit Timing Variations,#N/A
+pl_imppar,Impact Parameter,TRUE
+pl_trandep,Transit Depth [%],#N/A
+pl_trandur,Transit Duration [hours],#N/A
+pl_ratdor,Ratio of Semi-Major Axis to Stellar Radius,#N/A
+pl_ratror,Ratio of Planet to Stellar Radius,#N/A
+pl_occdep,Occultation Depth [%],#N/A
+pl_orbtper,Epoch of Periastron [days],#N/A
+pl_orblper,Argument of Periastron [deg],#N/A
+pl_rvamp,Radial Velocity Amplitude [m/s],#N/A
+pl_projobliq,Projected Obliquity [deg],#N/A
+pl_trueobliq,True Obliquity [deg],#N/A
+st_refname,Stellar Parameter Reference,#N/A
+st_spectype,Spectral Type,#N/A
+st_teff,Stellar Effective Temperature [K],TRUE
+st_rad,Stellar Radius [Solar Radius],#N/A
+st_mass,Stellar Mass [Solar mass],TRUE
+st_met,Stellar Metallicity [dex],TRUE
+st_metratio,Stellar Metallicity Ratio,#N/A
+st_lum,Stellar Luminosity [log(Solar)],#N/A
+st_logg,Stellar Surface Gravity [log10(cm/s**2)],TRUE
+st_age,Stellar Age [Gyr],TRUE
+st_dens,Stellar Density [g/cm**3],#N/A
+st_vsin,Stellar Rotational Velocity [km/s],#N/A
+st_rotp,Stellar Rotational Period [days],#N/A
+st_radv,Systemic Radial Velocity [km/s],#N/A
+sy_refname,System Parameter Reference,#N/A
+rastr,RA [sexagesimal],#N/A
+ra,RA [deg],#N/A
+decstr,Dec [sexagesimal],#N/A
+dec,Dec [deg],#N/A
+glat,Galactic Latitude [deg],#N/A
+glon,Galactic Longitude [deg],#N/A
+elat,Ecliptic Latitude [deg],#N/A
+elon,Ecliptic Longitude [deg],#N/A
+sy_pm,Total Proper Motion [mas/yr],#N/A
+sy_pmra,Proper Motion (RA) [mas/yr],#N/A
+sy_pmdec,Proper Motion (Dec) [mas/yr],#N/A
+sy_dist,Distance [pc],#N/A
+sy_plx,Parallax [mas],#N/A
+sy_bmag,B (Johnson) Magnitude,#N/A
+sy_vmag,V (Johnson) Magnitude,#N/A
+sy_jmag,J (2MASS) Magnitude,#N/A
+sy_hmag,H (2MASS) Magnitude,#N/A
+sy_kmag,Ks (2MASS) Magnitude,#N/A
+sy_umag,u (Sloan) Magnitude,#N/A
+sy_gmag,g (Sloan) Magnitude,#N/A
+sy_rmag,r (Sloan) Magnitude,#N/A
+sy_imag,i (Sloan) Magnitude,#N/A
+sy_zmag,z (Sloan) Magnitude,#N/A
+sy_w1mag,W1 (WISE) Magnitude,#N/A
+sy_w2mag,W2 (WISE) Magnitude,#N/A
+sy_w3mag,W3 (WISE) Magnitude,#N/A
+sy_w4mag,W4 (WISE) Magnitude,#N/A
+sy_gaiamag,Gaia Magnitude,#N/A
+sy_icmag,I (Cousins) Magnitude,#N/A
+sy_tmag,TESS Magnitude,#N/A
+sy_kepmag,Kepler Magnitude,#N/A
+rowupdate,Date of Last Update,#N/A
+pl_pubdate,Planetary Parameter Reference Publication Date,#N/A
+releasedate,Release Date,#N/A
+pl_nnotes,Number of Notes,#N/A
+k2_campaigns,K2 Campaigns,#N/A
+k2_campaigns_num,Number of K2 Campaigns,#N/A
+st_nphot,Number of Photometry Time Series,#N/A
+st_nrvc,Number of Radial Velocity Time Series,#N/A
+st_nspec,Number of Stellar Spectra Measurements,#N/A
+pl_nespec,Number of Emission Spectroscopy Measurements,#N/A
+pl_ntranspec,Number of Transmission Spectroscopy Measurements,#N/A
